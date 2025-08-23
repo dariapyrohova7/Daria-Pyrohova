@@ -1,0 +1,28 @@
+body {
+      display: flex; flex-direction: column; justify-content: center; align-items: center;background-image: url(depositphotos_126325932-stock-photo-many-cats-background.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: rgba(99, 101, 102, 0.114);
+    }
+    #h1-div {
+      border: 8px solid rgba(71, 7, 70, 0.589); background-color: rgba(205, 183, 203, 0.863); border-radius: 50%; margin: 50px 0 100px;
+    }
+    h1 {
+      padding: 70px; font-family: 'Times New Roman', Times, serif; font-weight: bold; font-style: italic;text-align: center; color: rgba(10, 126, 20, 0.953)
+    }
+    #other-pages {
+      margin-top: 50px; 
+      block-size: 100 px 200px; 
+      background-color: rgba(236, 239, 241, 0.779); 
+      padding: 20px 10px 20px; 
+      border: 10px solid rgba(250, 246, 241, 0.877); 
+      border-radius: 20px;
+    }
+    a {
+      color: rgb(6, 77, 34); 
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      font-size: 50; 
+      margin: 10px; 
+      cursor: pointer
+    }

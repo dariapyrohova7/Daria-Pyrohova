@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Внутрішня таблиця стилів</title>
+   <style>
+    body {
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      margin-top: 40px; 
+      background: linear-gradient(to right, #b0cdba, #a3dc97); 
+    }
+    #outer-block {
+      align-items: center; 
+      justify-content: space-between; 
+      width: 100%; 
+      display: flex;
+    }
+    #inner-block {
+      border: 8px solid rgba(71, 36, 7, 0.589); 
+      background-color: rgba(157, 93, 33, 0.605); 
+      border-radius: 50%; 
+      margin: 50px 150px 100px;
+    }
+    h2 {
+      padding: 70px; 
+      font-family: 'Times New Roman', Times, serif; 
+      font-weight: bold; 
+      font-style: italic;
+      text-align: center; 
+      color: rgba(250, 246, 241, 0.877)
+    }
+    table {
+      border-collapse: collapse;
+      align-items: center;
+      justify-content: center;
+      margin-right: 100px;
+      width: 500px;
+      height: 200px;
+      background-color: rgba(236, 239, 241, 0.779);
+      border-color:rgb(39, 20, 4);
+      margin-bottom: 50px;
+      margin-right: 150px;
+    }
+    td {
+      font-family: Georgia, 'Times New Roman', Times, serif; 
+      font-size: large; 
+      font-weight: 500; 
+      font-style: italic;
+    }
+    .homework-links {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: italic;
+      color: rgb(6, 77, 34);
+      cursor: pointer;
+    }
+    p {
+      font-family: Georgia, 'Times New Roman', Times, serif; 
+      font-size: larger; 
+      font-weight: bold; 
+      font-style: italic;
+    }
+    #other-pages {
+      margin-top: 50px; 
+      block-size: 100 px 200px; 
+      background-color: rgba(236, 239, 241, 0.779); 
+      padding: 20px 10px 20px; 
+      border: 10px solid rgba(250, 246, 241, 0.877); 
+      border-radius: 20px;
+    }
+    a {
+      color: rgb(6, 77, 34); 
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      font-size: 15px; 
+      margin: 10px; 
+      cursor: pointer
+    }
+    td {
+      font-size: 15px;
+    }
+    .first-raw {
+      font-size: 20px;
+    }
+   </style>
+</head>
+<body>
+  <div id="outer-block">
+    <div id="inner-block">
+    <h2>Сторінка № 2.<br> Тут використовується внутрішня  <br> таблиця стилів</h2>
+    </div>
+    <table border="3px">
+        <tr>
+          <td class="first-raw">Site</td>  
+          <td class="first-raw">Charset</td>
+        </tr>
+        <tr>
+          <td><a target="_blank" class="homework-links" href="https://beetroot.academy/">https://beetroot.academy/</a></td>  
+          <td>UTF-8</td>
+        </tr>  
+         <tr>
+          <td><a target="_blank" class="homework-links" href="https://microseniors76.com/">https://microseniors76.com/</a></td>  
+          <td>iso-8859-1</td>
+        </tr>
+         <tr>
+          <td><a target="_blank" class="homework-links" href="https://www.tennis-warehouse.com/">https://www.tennis-warehouse.com/</a></td>  
+          <td>macintosh + UTF-8 for JS</td>
+        </tr>
+         <tr>
+          <td><a target="_blank" class="homework-links" href="https://www.fidelity.com/">https://www.fidelity.com/</a></td>  
+          <td>iso-8859-1 + UTF-8 for JS</td>
+        </tr>         
+    </table>
+  </div>
+  <div>
+     <p>На цій сторінці міститься таблиця з відповідями на завдання про кодування символів</p>
+  </div>
+  <div id="other-pages"> 
+    <a href="урок_14_1_index.html">Сторінка № 1</a>
+    <a href="урок_14_3_index.html">Сторінка № 3</a>
+  </div>
+</body>
+</html>
