@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "e7e6d971-27ac-41be-b439-a3a7cab00247",
+		"name": "Daria Pyrohova Homework 18",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "47659189",
+		"_collection_link": "https://daria-pyrohova7-2090359.postman.co/workspace/Daria-Pyrohova's-Workspace~c6ded6b7-a395-4dab-8f58-c8be2b3e2a68/collection/47659189-e7e6d971-27ac-41be-b439-a3a7cab00247?action=share&source=collection_link&creator=47659189"
+	},
+	"item": [
+		{
+			"name": "Get default user using valid ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Cecilia Hoeger\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}?id=\"1505e6aa-0679-4258-860d-3a2284238446\"",
+					"host": [
+						"{{base_url}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "\"1505e6aa-0679-4258-860d-3a2284238446\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create custom user with valid data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"age\", 27);\r",
+							"    pm.expect(jsonData).to.have.property(\"gender\", \"female\");\r",
+							"    pm.expect(jsonData).to.have.property(\"city\", \"Soborg\");\r",
+							"    pm.expect(jsonData).to.have.property(\"name\", \"Kateryna\");\r",
+							"    pm.expect(jsonData).to.have.property(\"id\", \"c13e13a4-9008-4fc9-a13f-a39af4418784\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Kateryna\",\r\n    \"city\": \"Soborg\",\r\n    \"age\": 27,\r\n    \"gender\": \"female\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit default user  with valid data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body is correct\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"Robert\");\r",
+							"    pm.expect(jsonData.gender).to.eql(\"male\");\r",
+							"    pm.expect(jsonData.gender).to.eql(\"O'Reillyfort\");\r",
+							"    pm.expect(jsonData.age).to.eql(37);\r",
+							"    pm.expect(jsonData.id).to.eql(\"7dd6696a-9fb8-4258-a47b-12a4f43dff89\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 1200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"7dd6696a-9fb8-4258-a47b-12a4f43dff89\",\r\n    \"name\": \"Robert\",\r\n    \"age\": 37,\r\n    \"gender\": \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete custom user using valid ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"User is deleted\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}?id=\"c13e13a4-9008-4fc9-a13f-a39af4418784\"",
+					"host": [
+						"{{base_url}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "\"c13e13a4-9008-4fc9-a13f-a39af4418784\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get default user using invalid ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"No user found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}?id=\"1505e6aa-0679-4258-860d\"",
+					"host": [
+						"{{base_url}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "\"1505e6aa-0679-4258-860d\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create custom user with string in the \"age\" field",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"Valentyn\");\r",
+							"    pm.expect(jsonData.gender).to.eql(\"male\");\r",
+							"     pm.expect(jsonData.city).to.eql(\"Soborg\");\r",
+							"    pm.expect(jsonData.age).to.eql(30);\r",
+							"    pm.expect(jsonData.id).to.eql(\"2b65d84f-37e4-43f3-9bb6-b9bd1be0cb73\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Valentyn\",\r\n    \"city\": \"Soborg\",\r\n    \"gender\": \"male\",\r\n    \"age\": \"30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit default user with integers in the \"gender\" field",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Invalid gender\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Bad Request\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"7dd6696a-9fb8-4258-a47b-12a4f43dff89\",\r\n    \"name\": \"Minerva\",\r\n    \"gender\": 123456,\r\n    \"age\": 70\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete custom user using invalid ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"No user found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}?id=\"2b65d84f-37e4-43f\"",
+					"host": [
+						"{{base_url}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "\"2b65d84f-37e4-43f\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"type": "default"
+		}
+	]
+}
