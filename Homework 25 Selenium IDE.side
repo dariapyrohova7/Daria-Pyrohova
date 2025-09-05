@@ -1,0 +1,1115 @@
+{
+  "id": "2a56cfa7-837b-49c3-a12f-2e0c7eb9600e",
+  "version": "2.0",
+  "name": "Homework 25 Selenium IDE",
+  "url": "https://rozetka.com.ua",
+  "tests": [{
+    "id": "ad8dbc8e-9034-4132-a5e9-cc0a9fc43eb4",
+    "name": "Test case 1 (redirect to \"Зв'язатись з нами\" from \"Як оплатити замовлення при отриманні?\" page)",
+    "commands": [{
+      "id": "d853a4db-980a-4cea-b012-4bbbcb6bf0e2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06da57fe-b4fe-4293-b9e1-ce3d2897feac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/contacts/')]",
+      "targets": [
+        ["linkText=Контакти", "linkText"],
+        ["css=.footer-links:nth-child(1) .footer-links__item:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/contacts/')]", "xpath:href"],
+        ["xpath=//rz-service-links/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64082854-f8da-4081-b1b8-380ae685e79f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.footer-links:nth-child(1) .footer-links__item:nth-child(4) > a",
+      "targets": [
+        ["linkText=Контакти", "linkText"],
+        ["css=.footer-links:nth-child(1) .footer-links__item:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Контакти')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/contacts/')])[2]", "xpath:href"],
+        ["xpath=//div/rz-service-links/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": "Контакти"
+    }, {
+      "id": "1b2f4df7-478c-4c6f-9d6f-335434c78e8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer-links:nth-child(1) .footer-links__item:nth-child(4) > a",
+      "targets": [
+        ["linkText=Контакти", "linkText"],
+        ["css=.footer-links:nth-child(1) .footer-links__item:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/contacts/')]", "xpath:href"],
+        ["xpath=//rz-service-links/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2eb8726-3560-441b-944a-440b09e81872",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.rz-card:nth-child(1) > .rz-card__wrap > h4",
+      "targets": [
+        ["css=.rz-card:nth-child(1) > .rz-card__wrap > h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Довідковий центр')]", "xpath:innerText"]
+      ],
+      "value": "Довідковий центр"
+    }, {
+      "id": "265b0704-a741-46b1-a325-a7187b68c7c4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//a[contains(@href, 'https://help.rozetka.com.ua/')])[4]",
+      "targets": [
+        ["linkText=Перейти", "linkText"],
+        ["css=.rz-card:nth-child(1) .rz-credits__button:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://help.rozetka.com.ua/')])[4]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a32457bf-dc2b-4ca0-84d6-a1658c2ad24f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти",
+      "targets": [
+        ["linkText=Перейти", "linkText"],
+        ["css=.rz-card:nth-child(1) .rz-credits__button:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://help.rozetka.com.ua/')])[4]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47cba2d4-9dab-4a31-8cbb-db99ba046f21",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(text(),'Як оплатити замовлення при отриманні?')]",
+      "targets": [
+        ["linkText=Як оплатити замовлення при отриманні?", "linkText"],
+        ["css=.article-item:nth-child(2) > .article-title", "css:finder"],
+        ["xpath=//a[contains(text(),'Як оплатити замовлення при отриманні?')]", "xpath:link"],
+        ["xpath=//div[@id='__nuxt']/div[2]/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/p/151-yak-oplatiti-zamovlennya-gotivkoyu-pri-otrimanni/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Як оплатити замовлення при отриманні?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e9bf8c1-b32f-454e-aed7-ac832a35c2d8",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(text(),'Як оплатити замовлення при отриманні?')]",
+      "targets": [
+        ["linkText=Як оплатити замовлення при отриманні?", "linkText"],
+        ["css=.article-item:nth-child(2) > .article-title", "css:finder"],
+        ["xpath=//a[contains(text(),'Як оплатити замовлення при отриманні?')]", "xpath:link"],
+        ["xpath=//div[@id='__nuxt']/div[2]/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/p/151-yak-oplatiti-zamovlennya-gotivkoyu-pri-otrimanni/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Як оплатити замовлення при отриманні?')]", "xpath:innerText"]
+      ],
+      "value": "Як оплатити замовлення при отриманні?"
+    }, {
+      "id": "aa50e438-7922-4333-a691-3290fb6d5390",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Як оплатити замовлення при отриманні?",
+      "targets": [
+        ["linkText=Як оплатити замовлення при отриманні?", "linkText"],
+        ["css=.article-item:nth-child(2) > .article-title", "css:finder"],
+        ["xpath=//a[contains(text(),'Як оплатити замовлення при отриманні?')]", "xpath:link"],
+        ["xpath=//div[@id='__nuxt']/div[2]/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/p/151-yak-oplatiti-zamovlennya-gotivkoyu-pri-otrimanni/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Як оплатити замовлення при отриманні?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af8282fb-c298-49b0-bfce-7a103cb55a8f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='__nuxt']/div[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6bd5344-1660-4acd-85b9-ed21cd3f4588",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn",
+      "targets": [],
+      "value": " Зв'язатись з нами "
+    }, {
+      "id": "f447185d-9825-4449-a0c6-6186f074a637",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='__nuxt']/div[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d765725-71df-4373-829a-7c8018dc0386",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.me-2 > img",
+      "targets": [
+        ["css=.me-2 > img", "css:finder"],
+        ["xpath=//div[@id='__nuxt']/div[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0672473-b673-479a-a374-3e6dbcb11a40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2 > img",
+      "targets": [
+        ["css=.me-2 > img", "css:finder"],
+        ["xpath=//div[@id='__nuxt']/div[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dec41abf-79cc-425f-bc8a-569835ffd9ce",
+    "name": "Test case 2 (presence of subcategories links on the category page)",
+    "commands": [{
+      "id": "48784cfc-f060-4fef-8026-dafecda2bd32",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "005f0281-47e4-4aa5-8ba4-af1a75e3562e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fat-menu",
+      "targets": [
+        ["css=.fat-menu", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1afa7c78-4cfe-4754-a398-11d142251de1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.fat-menu",
+      "targets": [
+        ["css=.fat-menu", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": "Каталог"
+    }, {
+      "id": "e7d17c65-b5e1-4fde-b840-9107956e3d7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fat-menu",
+      "targets": [
+        ["css=.fat-menu", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e6e9f48-475f-40f8-a2db-c514073bea94",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(11) > .category-link-old",
+      "targets": [
+        ["linkText=Краса та здоров’я", "linkText"],
+        ["css=li:nth-child(11) > .category-link-old", "css:finder"],
+        ["xpath=(//a[contains(text(),'Краса та здоров’я')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/krasota-i-zdorovje/c4629305/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82cd29a0-70ae-43f0-a269-b2c8b5003489",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(11) > .category-link-old",
+      "targets": [
+        ["linkText=Краса та здоров’я", "linkText"],
+        ["css=li:nth-child(11) > .category-link-old", "css:finder"],
+        ["xpath=(//a[contains(text(),'Краса та здоров’я')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/krasota-i-zdorovje/c4629305/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"]
+      ],
+      "value": "Краса та здоров’я"
+    }, {
+      "id": "8702a1f2-82e6-4b21-89b4-52158589f346",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.list > li:nth-child(11) > .category-link-old",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d772621-0fdc-43ff-92de-3c33556648a2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.list-content-sub-item:nth-child(2) > .list-content-sub-item-inner:nth-child(4) .d-block",
+      "targets": [
+        ["linkText=Парфуми", "linkText"],
+        ["css=.list-content-sub-item:nth-child(2) > .list-content-sub-item-inner:nth-child(4) .d-block", "css:finder"],
+        ["xpath=(//a[contains(text(),'Парфуми')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/perfume/c2048522/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul[4]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "459a7eb4-dba1-4548-bb84-3e9d89559187",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.list-content-sub-item:nth-child(2) > .list-content-sub-item-inner:nth-child(4) .d-block",
+      "targets": [
+        ["linkText=Краса та здоров’я", "linkText"],
+        ["css=li:nth-child(11) > .category-link-old", "css:finder"],
+        ["xpath=(//a[contains(text(),'Краса та здоров’я')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/krasota-i-zdorovje/c4629305/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"]
+      ],
+      "value": "Парфуми"
+    }, {
+      "id": "135bc19a-a0de-4f6f-be26-ebf42c977278",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-content-sub-item:nth-child(2) > .list-content-sub-item-inner:nth-child(4) .d-block",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "212b7a5f-0a66-44c6-8688-cd7ceb483210",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/genskaya-parfyumeriya/c4658546/')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "bc5b3ba7-c3b0-4f4f-a93d-635530aa84c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/genskaya-parfyumeriya/c4658546/')]",
+      "targets": [
+        ["linkText=Краса та здоров’я", "linkText"],
+        ["css=li:nth-child(11) > .category-link-old", "css:finder"],
+        ["xpath=(//a[contains(text(),'Краса та здоров’я')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/krasota-i-zdorovje/c4629305/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"]
+      ],
+      "value": "Жіноча парфумерія"
+    }, {
+      "id": "8a170461-bcdb-4491-8a4f-92a7f1ed43b6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/mugskaya-parfyumeriya/c4658552/')])[4]",
+      "targets": [
+        ["linkText=Чоловіча парфумерія", "linkText"],
+        ["css=.link:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/mugskaya-parfyumeriya/c4658552/')])[4]", "xpath:href"],
+        ["xpath=//nav/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Чоловіча парфумерія')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71701652-a3bd-4e56-9e85-5630f857876b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/mugskaya-parfyumeriya/c4658552/')])[4]",
+      "targets": [
+        ["linkText=Чоловіча парфумерія", "linkText"],
+        ["css=.link:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/mugskaya-parfyumeriya/c4658552/')])[4]", "xpath:href"],
+        ["xpath=//nav/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Чоловіча парфумерія')]", "xpath:innerText"]
+      ],
+      "value": "Чоловіча парфумерія"
+    }, {
+      "id": "a0e22ccf-8b62-4d90-90eb-bde36dd98416",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/atomayzeri-dlya-duhov/c4658570/')]",
+      "targets": [
+        ["linkText=Атомайзери для парфумів", "linkText"],
+        ["css=.link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/atomayzeri-dlya-duhov/c4658570/')]", "xpath:href"],
+        ["xpath=//nav/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Атомайзери для парфумів')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af084066-5bea-464f-8d02-9de8c607b992",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/atomayzeri-dlya-duhov/c4658570/')]",
+      "targets": [
+        ["linkText=Атомайзери для парфумів", "linkText"],
+        ["css=.link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/atomayzeri-dlya-duhov/c4658570/')]", "xpath:href"],
+        ["xpath=//nav/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Атомайзери для парфумів')]", "xpath:innerText"]
+      ],
+      "value": "Атомайзери для парфумів"
+    }, {
+      "id": "aefa6d8e-a41d-45d7-8533-3355f5bec778",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/detskaya-parfyumeriya/c4658558/')]",
+      "targets": [
+        ["linkText=Дитяча парфумерія", "linkText"],
+        ["css=.link:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/detskaya-parfyumeriya/c4658558/')]", "xpath:href"],
+        ["xpath=//nav/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Дитяча парфумерія')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c657c7c7-bc52-4c01-9e27-8577948728f6",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/detskaya-parfyumeriya/c4658558/')]",
+      "targets": [
+        ["linkText=Дитяча парфумерія", "linkText"],
+        ["css=.link:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/detskaya-parfyumeriya/c4658558/')]", "xpath:href"],
+        ["xpath=//nav/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Дитяча парфумерія')]", "xpath:innerText"]
+      ],
+      "value": "Дитяча парфумерія"
+    }, {
+      "id": "c0dab011-4088-4756-bf46-ba9b37c17a91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/perfume/c2048522/klass-parfyumerii=nishevaya/')]",
+      "targets": [
+        ["linkText=Нішева парфумерія", "linkText"],
+        ["css=.link:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/perfume/c2048522/klass-parfyumerii=nishevaya/')]", "xpath:href"],
+        ["xpath=//nav/a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Нішева парфумерія')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9310b77b-c380-471c-9a95-596a44a0d36d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/perfume/c2048522/klass-parfyumerii=nishevaya/')]",
+      "targets": [
+        ["linkText=Краса та здоров’я", "linkText"],
+        ["css=li:nth-child(11) > .category-link-old", "css:finder"],
+        ["xpath=(//a[contains(text(),'Краса та здоров’я')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/krasota-i-zdorovje/c4629305/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"]
+      ],
+      "value": "Нішева парфумерія"
+    }]
+  }, {
+    "id": "b4addab9-09f4-46d0-a709-f670c6ecb574",
+    "name": "Test case 6 (search with valid data)",
+    "commands": [{
+      "id": "8352940e-75c6-469e-abf6-d3944ee56ac9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1301d2f9-c3bb-4ba1-889e-21071bdf394f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43171d39-762a-4307-89d4-636af908fba6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89eb8336-cf43-41d6-b901-e9dac5dc6a47",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": "Знайти"
+    }, {
+      "id": "2cc569bd-61d3-4a1b-b1e1-2bbe3eb74b97",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Корм для котів"
+    }, {
+      "id": "d8c2921f-6561-4ee4-bdf8-230d2be169e7",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "linkText=Корм для собак",
+      "targets": [
+        ["linkText=Корм для собак", "linkText"],
+        ["css=.search-suggest__item_state_active > .search-suggest__item-content", "css:finder"],
+        ["xpath=//a[contains(text(),'Корм для собак')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/food_for_dogs/c1461202/')]", "xpath:href"],
+        ["xpath=//li[6]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корм для собак')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c02c6452-c946-4e36-b5f9-c7430d90be25",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.search-suggest",
+      "targets": [],
+      "value": "Корм для собак"
+    }, {
+      "id": "916cc25f-d97c-41bc-b6d4-d157e54d5567",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_green",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd7db3c8-12fa-4023-ae39-056be4ad6471",
+      "comment": "",
+      "command": "waitForText",
+      "target": "xpath=//h1[contains(.,'Корм для котів')]",
+      "targets": [
+        ["css=.catalog-heading", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Корм для котів')]", "xpath:innerText"]
+      ],
+      "value": "Корм для котів"
+    }]
+  }, {
+    "id": "2c1a7a32-d6ca-49c8-89d5-7b55e788529c",
+    "name": "Test case 4 (remove from the cart, cart empty)",
+    "commands": [{
+      "id": "6550199d-ea52-4431-89ab-e54cd81af705",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/1162070/c1162070/producer=puma/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b379b7b4-0a11-4f77-a619-fdfa8e4d61e4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-heading",
+      "targets": [
+        ["css=.catalog-heading", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Чоловічий одяг Puma')]", "xpath:innerText"]
+      ],
+      "value": "Чоловічий одяг Puma"
+    }, {
+      "id": "9d370ef0-5db9-41e0-9443-1f21226852d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) .tile-title",
+      "targets": [
+        ["css=.item:nth-child(1) .tile-title", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/puma-4069156254725/p503467349/')])[2]", "xpath:href"],
+        ["xpath=//article/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbac0190-8268-410c-a5e9-1f6186787f45",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[2]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "56eac967-e8ed-43c7-9240-fb7361a69020",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .var-options__block > span",
+      "targets": [
+        ["css=li:nth-child(1) .var-options__block > span", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[2]/rz-var-parameters/rz-var-parameter-option/div/div/ul/li/rz-var-parameter-option-item/rz-button-product-page/rz-indexed-link/a/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8465dc8a-12dd-43a8-88fa-2dccce4d61db",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[16]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[3]/div/div[3]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4cf8dfe-53b3-45c2-a1be-1f8931599a5a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[16]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[3]/div/div[3]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": "Купити"
+    }, {
+      "id": "47f158a2-c655-48a2-a74e-a0734b9192e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[16]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[3]/div/div[3]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5802761b-11ac-4319-a558-7208896cddb1",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartProductActions0",
+      "targets": [
+        ["id=cartProductActions0", "id"],
+        ["css=#cartProductActions0", "css:finder"],
+        ["xpath=//button[@id='cartProductActions0']", "xpath:attributes"],
+        ["xpath=//rz-popup-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c702a35-9319-4654-998b-1d53b042da2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=rz-trash-icon > .button",
+      "targets": [
+        ["css=rz-trash-icon > .button", "css:finder"],
+        ["xpath=(//button[@type='button'])[74]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions0']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46017c3-a310-4130-9a06-3fecde9110cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cart-dummy__heading",
+      "targets": [
+        ["css=.cart-dummy__heading", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Кошик порожній')]", "xpath:innerText"]
+      ],
+      "value": "Кошик порожній"
+    }, {
+      "id": "8bbc7e85-25f9-4a0c-8b2f-b9888dd854e4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cart-dummy__caption",
+      "targets": [
+        ["css=.cart-dummy__caption", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Але це ніколи не пізно виправити :)')]", "xpath:innerText"]
+      ],
+      "value": "Але це ніколи не пізно виправити :) "
+    }]
+  }, {
+    "id": "e14214ab-89d0-47e6-96ea-0934bacd7f98",
+    "name": "Test case 3 (search with invalid data)",
+    "commands": [{
+      "id": "c1c797c5-1a80-4ae9-8656-f1ab83d1e99b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c231ddde-9e9f-47c3-9d20-d999bd133b3b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36008984-8e54-42eb-a2bd-bc29782afc11",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "341313fb-56c0-4ee8-aa85-5d66ec9725c5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef39ed0f-2b36-45a2-9f93-42f3a2ca0d2f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": "Знайти"
+    }, {
+      "id": "3d072333-4a2c-4872-bd88-d2ede5ab4362",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='search']",
+      "targets": [],
+      "value": "!@#$%^"
+    }, {
+      "id": "f4dc69a1-5a42-4171-844e-c39fe21d6dfd",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Я шукаю..."
+    }, {
+      "id": "e1e26c1a-b923-487a-acd2-fc8c00758d5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_green",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb6e2fcb-504b-43c1-8193-7f938057f834",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'За запитом «!@#$%^» нічого не знайдено :(')]", "xpath:innerText"]
+      ],
+      "value": "За запитом «!@#$%^» нічого не знайдено :("
+    }, {
+      "id": "d740c64f-8dfb-4c72-bdef-d1ea508ab487",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.search-nothing__buttons > .button--green",
+      "targets": [
+        ["css=.search-nothing__buttons > .button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Змінити запит')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca577b04-d295-4a40-ba91-7f4cde1a7dbc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.search-nothing__buttons > .button--green",
+      "targets": [
+        ["css=.search-nothing__buttons > .button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Змінити запит')]", "xpath:innerText"]
+      ],
+      "value": "Змінити запит"
+    }, {
+      "id": "ba920e36-d6f7-4448-a624-9bcea54d2ca2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=searchFatMenu",
+      "targets": [
+        ["id=searchFatMenu", "id"],
+        ["css=.search-nothing__buttons > #searchFatMenu", "css:finder"],
+        ["xpath=//button[@id='searchFatMenu']", "xpath:attributes"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Скористатись каталогом')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2770379d-99a8-4569-8cec-fb7ca03d874a",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=searchFatMenu",
+      "targets": [
+        ["id=searchFatMenu", "id"],
+        ["css=.search-nothing__buttons > #searchFatMenu", "css:finder"],
+        ["xpath=//button[@id='searchFatMenu']", "xpath:attributes"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Скористатись каталогом')]", "xpath:innerText"]
+      ],
+      "value": "Скористатись каталогом"
+    }]
+  }, {
+    "id": "c473107e-a416-40f5-b823-db5d79dd68ad",
+    "name": "Test case 7 (brand filter)",
+    "commands": [{
+      "id": "96001f49-16bd-408f-9ecd-f26e84204a53",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/notebooks/c80004/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d588f13-579b-41f8-b377-2ac672773a76",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.slider",
+      "targets": [
+        ["css=.item:nth-child(8) .slide-image", "css:finder"],
+        ["xpath=//img[@alt='Додаткова знижка 5% при оплаті онлайн!']", "xpath:img"],
+        ["xpath=//div[8]/a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b80196b-45cf-48cf-97d0-7a26c8bac60f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[9]",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//rz-catalog-layout/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Фільтри (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3fc60ca-f4c7-4999-bd40-b584e67db080",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Apple (83)",
+      "targets": [
+        ["linkText=Apple (83)", "linkText"],
+        ["css=.ps-4 li:nth-child(2) > .checkbox-filter-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/ua/notebooks/c80004/producer=apple/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Apple (83)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10c0f6c0-48e3-420b-bc3c-bc0fffa6fa5b",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.indent",
+      "targets": [
+        ["css=.indent", "css:finder"],
+        ["xpath=//rz-catalog-layout", "xpath:position"]
+      ],
+      "value": "ASUS"
+    }, {
+      "id": "64c62c69-45f2-4bdd-b01e-dec78c5f8663",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.indent",
+      "targets": [
+        ["css=.indent", "css:finder"],
+        ["xpath=//rz-catalog-layout", "xpath:position"]
+      ],
+      "value": "Acer"
+    }, {
+      "id": "02461ffb-e7de-43c5-8249-986c90055912",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.indent",
+      "targets": [
+        ["css=.indent", "css:finder"],
+        ["xpath=//rz-catalog-layout", "xpath:position"]
+      ],
+      "value": "Lenovo"
+    }]
+  }, {
+    "id": "8031fd89-7087-4c19-b07b-19a6deaa8982",
+    "name": "Test case 8 (not editable couner in the cart)",
+    "commands": [{
+      "id": "760ff197-882a-4ecc-9f4b-4be08dfd44f0",
+      "comment": "",
+      "command": "open",
+      "target": "https://bt.rozetka.com.ua/ua/refrigerators/c80125/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67fe1eb0-e972-4ce0-95b9-bf18dc46fa0d",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//main",
+      "targets": [],
+      "value": "Морозильна камера"
+    }, {
+      "id": "71c5686e-7946-4b48-bc63-cced80df4a91",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//main",
+      "targets": [],
+      "value": "Пральна машина"
+    }, {
+      "id": "b781a3b9-29c0-4f7f-845b-4734892b0ef1",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//main",
+      "targets": [],
+      "value": "Сушильний автомат"
+    }, {
+      "id": "dc5cb9fc-3600-4b6b-83bb-505c8bea24c7",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//main",
+      "targets": [],
+      "value": "Кухонна плита"
+    }, {
+      "id": "de7cea52-a68d-4660-aefb-8657ea45ddb3",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//main",
+      "targets": [],
+      "value": "Посудомийна машина"
+    }, {
+      "id": "78db9ea8-678b-4de9-9273-204ce3c6f1d5",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//main",
+      "targets": [],
+      "value": "Генератор льоду"
+    }, {
+      "id": "29bae819-e325-44a1-8e67-e3d8429df0e4",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//main",
+      "targets": [],
+      "value": "Шафа для вина"
+    }, {
+      "id": "21da71c5-f4bd-45df-ba18-e08252d76ce3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Холодильник Bosch KGN36VL326",
+      "targets": [
+        ["linkText=Холодильник Bosch KGN36VL326", "linkText"],
+        ["css=.item:nth-child(1) .tile-title", "css:finder"],
+        ["xpath=//a[contains(text(),'Холодильник Bosch KGN36VL326')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://bt.rozetka.com.ua/ua/bosch_kgn36vl326/p129981199/')])[2]", "xpath:href"],
+        ["xpath=//article/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Холодильник Bosch KGN36VL326')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "418f1cee-8bf9-43f6-8652-f554faa9dd3c",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[2]",
+      "targets": [
+        ["css=.py-6", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[2]", "xpath:idRelative"],
+        ["xpath=//rz-product-main-info/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57ff8bc9-059d-4918-84b0-66ddb358412f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buy-button__label",
+      "targets": [
+        ["css=.buy-button__label", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[3]/div/div[3]/rz-product-buy-btn/rz-buy-button/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'В кошику')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a3cb527-6b37-4530-84fa-cb06257aca5c",
+      "comment": "",
+      "command": "verifyNotEditable",
+      "target": "css=.ng-dirty:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "05a2f523-d910-4dfa-af2c-3c2e4d0210f9",
+    "name": "Test case 5 (add more than in stock to the cart)",
+    "commands": [{
+      "id": "8e49f54b-5756-497b-a7ce-42472e8d77bc",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/genskaya-verhnyaya-odegda/c4637535/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee64ae2d-8277-4877-a65e-a6d64627e3e0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.order-2 > .layout:nth-child(1)",
+      "targets": [
+        ["css=.order-2 > .layout:nth-child(1)", "css:finder"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7978ab74-d3b3-451c-b2a1-9afc164b8144",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-heading",
+      "targets": [
+        ["css=.catalog-heading", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Верхній жіночий одяг')]", "xpath:innerText"]
+      ],
+      "value": "Верхній жіночий одяг"
+    }, {
+      "id": "0ae23156-17da-476d-80a1-79dd0255c820",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(12) strong",
+      "targets": [
+        ["css=.item:nth-child(12) strong", "css:finder"],
+        ["xpath=//div[12]/rz-product-tile/article/a[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'SAMANTI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc01881-e25b-4d1b-af09-d5680ff32fb1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//rz-product-main-info/div/div[2]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "0cf56c32-0a98-4762-af10-f068f540dcd1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.buy-button",
+      "targets": [
+        ["css=.buy-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[3]/div/div[3]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5062f10d-5e97-42bf-a160-c88498e2f023",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .var-options__block",
+      "targets": [
+        ["css=li:nth-child(3) .var-options__block", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[2]/rz-var-parameters/rz-var-parameter-option/div/div/ul/li[3]/rz-var-parameter-option-item/rz-button-product-page/rz-indexed-link/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/rz-var-parameter-option-item/rz-button-product-page/rz-indexed-link/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'46')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68038ccb-3d2c-4a92-9536-0342f9fa5e77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buy-button",
+      "targets": [
+        ["css=.buy-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/div/div[3]/div/div[3]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f3a87ea-6db2-4e33-9433-40cdba525ebf",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.cart-product__desktop-item .button:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5412a155-b9c2-4cd9-96f5-18b2851e5256",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.cart-product__desktop-item .button:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d03b309-9729-4fa0-93ab-3a19fcb15919",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.desktop .form__hint",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "dd545b77-ea1a-4f92-8ee8-3bc5888c1e7a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.desktop .form__hint",
+      "targets": [
+        ["css=.desktop .form__hint", "css:finder"],
+        ["xpath=//li/div", "xpath:position"]
+      ],
+      "value": "Недостатньо товару для покупки"
+    }]
+  }],
+  "suites": [{
+    "id": "8ac1134a-f384-47ac-818f-264442009533",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ad8dbc8e-9034-4132-a5e9-cc0a9fc43eb4"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
